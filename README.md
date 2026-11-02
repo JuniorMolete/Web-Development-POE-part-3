@@ -1,21 +1,21 @@
-# Paws Community Animal Shelter Website
+# Paws Community Animal Shelter — WEDE5020W Part 2
 
-A responsive static website prototype for Paws Community Animal Shelter.
+This package extends the Part 1 HTML into a styled, responsive website for Paws Community Animal Shelter. The site keeps the five required pages and uses one shared external stylesheet so that typography, colour, spacing, layout and interaction states remain consistent.
 
-## Part 3 features
+## Website
 
-- JavaScript-powered service cards with keyword search and category filtering.
-- Image gallery with a native accessible lightbox dialog.
-- Enquiry form for adoption, foster care, volunteering, donations and general information.
-- Contact form with required-field, email, telephone and message validation. A valid contact message is compiled into an email addressed to `hello@pawscommunity.example`.
-- Asynchronous client-side submission feedback with local storage for this static prototype; no personal form data is sent to a third-party service.
-- SEO metadata, canonical links, descriptive image alt text, `robots.txt` and `sitemap.xml`.
+Open `Websites/index.html` in a browser. The pages are:
 
-## Run locally
+- `index.html` — home and primary calls to action
+- `about.html` — organisation, community and research-informed approach
+- `services.html` — adoption, rehabilitation, foster, community and education services
+- `enquiry.html` — accessible enquiry form
+- `contactus.html` — contact details and opening hours
 
-Open `Websites/index.html` in a browser, or serve the site with `python3 -m http.server` from the `Websites` directory.
+All navigation links use lowercase filenames so that the site works on case-sensitive hosting. The home image uses `srcset`, `sizes`, descriptive alternative text and a responsive aspect ratio.
 
-## Deployment
+## Part 2 implementation
 
-The `Websites` directory can be deployed to GitHub Pages, Netlify or another static hosting platform. Replace the placeholder `example.com` URLs in the canonical metadata, `robots.txt` and `sitemap.xml` with the final deployment domain.
+The shared `Websites/styles.css` contains a reset, CSS custom properties, a consistent colour palette, relative spacing, typography, CSS Grid and Flexbox layouts, card styles, form controls, focus states and hover states. The layout is responsive at tablet (`52rem`) and mobile (`38rem`) breakpoints: the desktop multi-column layout collapses to a single column, navigation wraps into a mobile grid, and buttons and footer content reflow for narrow screens.
+
 
